@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <title>Malla Obstetricia UDD</title>
-  <style>
-    body { font-family: Arial; margin: 40px; background: #fdfdfd; }
-    h1 { color: #800080; }
-    .semestre { border: 1px solid #ccc; margin: 10px 0; padding: 15px; cursor: pointer; background: #f0f0f0; }
-    .contenido { display: none; margin-top: 10px; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Malla Curricular Obstetricia UDD</h1>
+
+  <div class="semestre" onclick="toggle('s0')">📘 Semestre 0 (Intro)</div>
+  <div class="contenido" id="s0">
+    <ul>
+      <li>Semana Introductoria</li>
+      <li>Lectura Crítica / Pensamiento Crítico</li>
+      <li>Programa Complementario de Inglés (A2+)</li>
+    </ul>
+  </div>
 
   <div class="semestre" onclick="toggle('s1')">📘 Semestre 1</div>
   <div class="contenido" id="s1">
@@ -33,11 +37,86 @@
     </ul>
   </div>
 
-  <script>
-    function toggle(id) {
-      var x = document.getElementById(id);
-      x.style.display = x.style.display === 'none' ? 'block' : 'none';
-    }
-  </script>
+  <div class="semestre" onclick="toggle('s3')">📕 Semestre 3</div>
+  <div class="contenido" id="s3">
+    <ul>
+      <li>Corporalidad y Parto en Movimiento</li>
+      <li>Introducción Clínica</li>
+      <li>Ultrasonografía I</li>
+      <li>Salud Sexual y Reproductiva</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggle('s4')">📙 Semestre 4</div>
+  <div class="contenido" id="s4">
+    <ul>
+      <li>Ultrasonografía II</li>
+      <li>Puericultura y Neonatología I</li>
+      <li>Simulación Clínica</li>
+      <li>Preservación de la Salud Materna</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggle('s5')">📘 Semestre 5</div>
+  <div class="contenido" id="s5">
+    <ul>
+      <li>Investigación Cuantitativa</li>
+      <li>Gestión e Innovación I</li>
+      <li>Bioética y Legislación</li>
+      <li>Habilidades Profesionales I</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggle('s6')">📗 Semestre 6</div>
+  <div class="contenido" id="s6">
+    <ul>
+      <li>Investigación Cualitativa</li>
+      <li>Gestión e Innovación II</li>
+      <li>Habilidades Profesionales II</li>
+      <li>Gestión en Salud Comunitaria</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggle('s7')">📕 Semestre 7</div>
+  <div class="contenido" id="s7">
+    <ul>
+      <li>Internado Obstetricia</li>
+      <li>Neonatología</li>
+      <li>Salud Sexual Masculina</li>
+      <li>Optativa: Piso Pélvico / Sexología Clínica</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggle('s8')">📙 Semestre 8</div>
+  <div class="contenido" id="s8">
+    <ul>
+      <li>Internado en Cesfam / Atención Primaria</li>
+      <li>Internado Neonatal Avanzado</li>
+      <li>Electiva en Investigación</li>
+      <li>Optativa en Inglés</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggle('s9')">📘 Semestre 9</div>
+  <div class="contenido" id="s9">
+    <ul>
+      <li>Internado Final Obstetricia</li>
+      <li>Neonatología Avanzada</li>
+      <li>Electivas (salud sexual, ultrasonografía)</li>
+      <li>Preparación Pre‑Título</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggle('s10')">📗 Semestre 10</div>
+  <div class="contenido" id="s10">
+    <ul>
+      <li>Internado Electivo Avanzado</li>
+      <li>Examen Pre‑Título</li>
+      <li>Titulación / Trabajo de Grado</li>
+      <li>Énfasis en Investigación (opcional)</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
