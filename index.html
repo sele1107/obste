@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malla Obstetricia UDD</title>
+  <style>
+    body { font-family: Arial; margin: 40px; background: #fdfdfd; }
+    h1 { color: #800080; }
+    .semestre { border: 1px solid #ccc; margin: 10px 0; padding: 15px; cursor: pointer; background: #f0f0f0; }
+    .contenido { display: none; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Malla Curricular Obstetricia UDD</h1>
+
+  <div class="semestre" onclick="toggle('s1')">📘 Semestre 1</div>
+  <div class="contenido" id="s1">
+    <ul>
+      <li>Embriología y Genética</li>
+      <li>Biología Celular</li>
+      <li>Química Básica</li>
+      <li>Matemáticas</li>
+    </ul>
+  </div>
+
+  <div class="semestre" onclick="toggle('s2')">📗 Semestre 2</div>
+  <div class="contenido" id="s2">
+    <ul>
+      <li>Fisiología</li>
+      <li>Morfología</li>
+      <li>Salud Pública</li>
+      <li>Comunicación en Salud</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggle(id) {
+      var x = document.getElementById(id);
+      x.style.display = x.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
